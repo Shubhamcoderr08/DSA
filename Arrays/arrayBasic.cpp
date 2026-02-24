@@ -111,4 +111,70 @@ using namespace std;
 //    cout<<"Second Largest element:"<<secondlargest;
 // }
 
+// Count the number of elements in given array greater than a given number x
+
+
+// int main(){
+//     int arr[5] ={3,5,6,7,2};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int x;
+//     cin>>x;
+//     int count = 0;
+
+//     for(int i =0;i<n;i++){
+//       if(arr[i]>x){
+//         count++;
+//       }
+//     }
+//     cout<<"Number of element greater than"<<" "<<x<<" "<<"is"<<" "<<count;
+//     return 0;
+// }
+
+
+// predict the output:
+
+// int main(){
+//   int sub[50],i;
+//   for( i=0;i<=48;i++){
+//     sub[i]=i;
+//     cout<<sub[i]<<endl;
+//   }
+// }
+
+
+// passing array to the Function
+
+
+// check if the array contains duplicate or not 
+
+
+int main(){
+    int arr[8] = {1,2,3,4,5,5,1,9};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<n;i++){
+        for(int j =i+1;j<n;j++){
+          if(arr[i]==arr[j]){
+           cout<<"Array contains duplicate Values:"<<arr[i]<<" "<<arr[j];
+        
+          }
+        
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

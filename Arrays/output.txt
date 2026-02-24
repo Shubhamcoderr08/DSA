@@ -1,1 +1,1 @@
-Second Largest element:7
+Array contains duplicate Values:1 1Array contains duplicate Values:5 5
