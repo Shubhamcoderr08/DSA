@@ -24,4 +24,5 @@ int main (){
     else{
         cout<<x<<" "<<"Not Found in Array";
     }
+    
 }

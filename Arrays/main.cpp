@@ -69,14 +69,16 @@ using namespace std;
 // cout<<"Size of Array:"<<sizeof(arrr);
 
 //  }
-int main (){
-    int arr[5];
-    int n = sizeof(arr)/sizeof(arr[0]);
-    for(int i =0 ;i<n;i++){
-        cin>>arr[i];
-    }
+// int main (){
+//     int arr[5];
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     for(int i =0 ;i<n;i++){
+//         cin>>arr[i];
+//     }
 
-    for(int i =0 ;i<n;i++){
-        cout<<arr[i];
-    }
-}
+//     for(int i =0 ;i<n;i++){
+//         cout<<arr[i];
+//     }
+// }
+
+
