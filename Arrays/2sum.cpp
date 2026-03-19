@@ -18,6 +18,7 @@
 // Explanation:
 
 // nums[1] + nums[5] = 3 + (-3) = 0
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -28,9 +29,7 @@ cin>>target;
 int n = sizeof(arr)/sizeof(arr[0]);
 
 for (int i =0;i<n;i++){
-
     for(int j=i+1;j<n;j++){
-
        if(arr[i] + arr[j] == target){
           cout<<i<<" "<<" "<<j;
        }
