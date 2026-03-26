@@ -7,9 +7,7 @@ void insertionSort(int arr[], int n){
     if(n <= 1){
         return;
     }
-
-    // sort first n-1 elements
-    insertionSort(arr, n-1);
+b
 
     int last = arr[n-1];
     int j = n-2;
