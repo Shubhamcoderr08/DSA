@@ -2,41 +2,29 @@
 #include <vector>
 using namespace std;
 
-class Solution {
-public:
-    vector<int> selfDividingNumbers(int left, int right) {
-        vector<int> temp;
+int main() {
+    int left = 1, right = 22;
+    vector<int> result;
 
-        for(int i = left; i <= right; i++) {
-            int num = i;
-            bool isValid = true;
+    for(int i = left; i <= right; i++) {
+        int num = i;
+        bool isValid = true;
 
-            while(num > 0) {
-                int lastdigit = num % 10;
+        while(num > 0) {
+            int digit = num % 10;
 
-                if(lastdigit == 0 || i % lastdigit != 0) {
-                    isValid = false;
-                    break;
-                }
-
-                num = num / 10;
+            if(digit == 0 || i % digit != 0) {
+                isValid = false;
+                break;
             }
 
-            if(isValid) {
-                temp.push_back(i);
-            }
+            num /= 10;
         }
 
-        return temp;
+        if(isValid) {
+            result.push_back(i);
+        }
     }
-};
-
-int main() {
-    Solution obj;
-    
-    int left = 1, right = 22;
-
-    vector<int> result = obj.selfDividingNumbers(left, right);
 
     cout << "Self Dividing Numbers: ";
     for(int x : result) {
