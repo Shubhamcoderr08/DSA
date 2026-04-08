@@ -24,18 +24,20 @@ using namespace std;
 
 // T.C: O(n)
 int main (){
-  vector<int> nums ={1,2,3,1,1,3};
+
+   vector<int> nums ={1,2,3,1,1,3};
 int n = nums.size();
 int result = 0;
 unordered_map<int,int> mp;
 
 for(int x :nums){
-    
+  
   result += mp[x];
    mp[x]++;
 }
+  cout<<result;
 
-cout<<result;
+
 }
 
 

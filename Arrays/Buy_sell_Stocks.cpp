@@ -20,3 +20,25 @@ int main() {
 
     return 0;
 }
+
+
+// brute force with T.C : O(n^2)
+
+
+
+
+// int main() {
+//     vector<int> prices = {7, 1, 5, 3, 6, 4};
+//      int n = prices.size();
+//         int maxProfit  = 0;
+//          for(int i =0;i<n-1;i++){
+//             for(int j=i+1;j<n;j++){
+//                 if(prices[j]-prices[i]>maxProfit) {
+//                     maxProfit = prices[j] - prices[i];
+//                 }
+//             }
+//          }
+
+//          return maxProfit;
+
+// }
