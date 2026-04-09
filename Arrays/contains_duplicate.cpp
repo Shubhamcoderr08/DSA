@@ -19,3 +19,47 @@ using namespace std;
 
 // Optimissed Solution 
 
+
+// int main(){
+
+//     int nums[] = {1,2,3,6};
+
+//     unordered_map<int,int> mp;
+//      bool isdupli = false;
+//     for (int x : nums){
+
+//         mp[x]++;
+
+//         if(mp[x]>1){
+//             isdupli = true;
+//         }   
+//     } 
+
+//     if(isdupli)  cout<<"true";
+//     else   cout<< "false";
+
+// }
+
+// more optimissed using unordered set without storing in map
+
+
+int main(){
+
+    int nums[]  = {1,2,3,9};
+     unordered_set<int> set;
+      bool dupli = false;
+
+     for(int x : nums) {
+     
+        if(set.count(x)){
+            dupli = true;
+        }
+        set.insert(x);
+        
+
+     }
+
+     if(dupli) cout<<"true";
+     else cout<<"false";
+
+}
