@@ -31,38 +31,66 @@
 
 // }
 
-// optimal approach
-
+// better approach : 0(n) and 0(n) => hashmap
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int majorityElement(vector<int> &nums){
-
-    int count = 0;
-    int candidate = 0;
-
-    for(int num : nums){
-
-        if(count == 0){
-            candidate = num;
-        }
-
-        if(num == candidate){
-            count++;
-        }
-        else{
-            count--;
-        }
-    }
-
-    return candidate;
-}
-
-int main(){
+int main (){
 
     vector<int> nums = {2,2,1,1,1,2,2};
+     int n = nums.size();
 
-    cout<<"Majority Element = "<<majorityElement(nums);
+ unordered_map<int,int> mp;
 
+     for(int x:nums){
+       mp[x]++;
+     }
+
+     for(auto it:mp){
+        if(it.second>n/2){
+            cout<<it.first;
+        }
+     }
+
+     return 0;
 }
+
+
+
+
+// optimal approach : 0(n), 0(1)
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int majorityElement(vector<int> &nums){
+
+//     int count = 0;
+//     int candidate = 0;
+
+//     for(int num : nums){
+
+//         if(count == 0){
+//             candidate = num;
+//         }
+
+//         if(num == candidate){
+//             count++;
+//         }
+//         else{
+//             count--;
+//         }
+//     }
+
+//     return candidate;
+// }
+
+// int main(){
+
+//     vector<int> nums = {2,2,1,1,1,2,2};
+
+//     cout<<"Majority Element = "<<majorityElement(nums);
+
+// }
